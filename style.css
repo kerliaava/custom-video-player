@@ -101,15 +101,14 @@ html {
     position: absolute;
     bottom: 0;
     width: 100%;
-    transform: translateY(100%) translateY(-5px);
     transition: all .3s;
     flex-wrap: wrap;
     background: rgba(0,0,0,0.1);
+
+    
   }
   
-  .player:hover .player__controls {
-    transform: translateY(0);
-  }
+  
   
   .player:hover .progress {
     height: 15px;
@@ -192,4 +191,14 @@ html {
     border-radius: 50px;
     background: rgb(168, 84, 52);
     cursor: pointer;
+  }
+
+  @media only screen and (min-width: 768px){
+
+    .player__controls {
+        transform: translateY(100%) translateY(-5px);   
+  }
+  .player:hover .player__controls {
+    transform: translateY(0);
+  }
   }
