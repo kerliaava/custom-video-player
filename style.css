@@ -3,6 +3,8 @@
 html {
     box-sizing: border-box;
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   
   *, *:before, *:after {
