@@ -60,7 +60,7 @@ html {
     overflow: hidden;
   }
   
-  /* This css is only applied when fullscreen is active. */
+  /* This css is only applied when fullscreen is active.
   .player:fullscreen {
     max-width: none;
     width: 100%;
@@ -69,7 +69,7 @@ html {
   .player:-webkit-full-screen {
     max-width: none;
     width: 100%;
-  }
+  } */
   
   .player__video {
     width: 100%;
@@ -87,9 +87,7 @@ html {
     max-width: 50px;
   }
   
-  .player__button:focus {
-    border-color: #ffc600;
-  }
+
   
   .player__slider {
     width: 10px;
@@ -98,12 +96,11 @@ html {
   
   .player__controls {
     display: flex;
-    position: absolute;
-    bottom: 0;
+   
     width: 100%;
     transition: all .3s;
     flex-wrap: wrap;
-    background: rgba(0,0,0,0.1);
+    background: rgba(168,84,52,0.5);
 
     
   }
@@ -196,7 +193,10 @@ html {
   @media only screen and (min-width: 768px){
 
     .player__controls {
-        transform: translateY(100%) translateY(-5px);   
+        transform: translateY(100%) translateY(-5px);  
+        position: absolute;
+        bottom: 0; 
+        background: rgba(0,0,0,0.1);
   }
   .player:hover .player__controls {
     transform: translateY(0);
